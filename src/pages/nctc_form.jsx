@@ -1,260 +1,253 @@
 // import React from "react";
-// import '../styles/TransportForm.css';
-
+// import "../styles/TransportForm.css";
 
 // const TransportForm = () => {
 //   return (
-//     <div className="p-8 max-w-4xl mx-auto bg-white">
-//       <form className="border border-gray-300 p-4">
-//         {/* Header Section */}
-//         <div className="flex justify-between items-center mb-4">
-//           <div className="flex gap-4">
-//             <div>
-//               <label className="text-sm">चालान नं.</label>
-//               <input type="text" className="border p-1 w-24" />
-//             </div>
-//             <div>
-//               <label className="text-sm">पेज नं.</label>
-//               <input type="text" className="border p-1 w-24" />
-//             </div>
-//             <div>
-//               <label className="text-sm">सीरियल नं.</label>
-//               <input type="text" className="border p-1 w-24" />
-//             </div>
-//           </div>
-          
-//           <div className="text-center text-xl font-bold">
-//             न्यू चौधरी ट्रांसपोर्ट कम्पनी
-//           </div>
-          
-//           <div className="flex gap-4">
-//             <div>
-//               <label className="text-sm">क्रमांक</label>
-//               <input type="text" className="border p-1 w-24" defaultValue="25501" />
-//             </div>
-//             <div>
-//               <label className="text-sm">गाड़ी नं.</label>
-//               <input type="text" className="border p-1 w-24" />
-//             </div>
-//             <div>
-//               <label className="text-sm">वजन</label>
-//               <input type="text" className="border p-1 w-24" />
-//             </div>
-//           </div>
+//     <div className="transport-form">
+//       <header>
+//         <h1>|| Shree Guru Jambheshwaraya Namah ||</h1>
+//         <h2>NEW CHAUDHARY TRANSPORT COMPANY</h2>
+//       </header>
+
+//       <div className="form-section">
+//         <div className="row">
+//           <label>Chalan No.: <input type="text" /></label>
+//           <label>Page No.: <input type="text" /></label>
+//           <label>Serial No.: <input type="text" /></label>
+//         </div>
+//         <div className="row">
+//           <label>Profit: <input type="text" /></label>
+//           <span>to</span>
+//           <label>Loss: <input type="text" /></label>
+//           <label>Weight: <input type="text" /></label>
+//         </div>
+//         <div className="row">
+//           <label>Krman No.: <input type="text" /></label>
+//           <label>Gaadi No.: <input type="text" /></label>
+//         </div>
+//       </div>
+
+//       <div className="details-section">
+//         <div className="row">
+//           <label>Loading Heti: <input type="text" /></label>
+//           <label>Loading Date: <input type="date" /></label>
+//           <label>Mail Delivery Tay Date: <input type="date" /></label>
 //         </div>
 
-//         {/* Date Section */}
-//         <div className="grid grid-cols-2 gap-4 mb-4">
-//           <div>
-//             <label className="text-sm block">लोडिंग हेतु गाड़ी फैक्ट्री पहुंचने की दिनांक</label>
-//             <input type="date" className="border p-1 w-full" />
-//           </div>
-//           <div>
-//             <label className="text-sm block">लोडिंग दिनांक</label>
-//             <input type="date" className="border p-1 w-full" />
-//           </div>
+//         <div className="row">
+//           <label>Gaadi Driver No.: <input type="text" /></label>
+//           <label>Gaadi Khalasi No.: <input type="text" /></label>
+//           <label>Gaadi WhatsApp No.: <input type="text" /></label>
+//           <label>Gaadi Malik No.: <input type="text" /></label>
 //         </div>
 
-//         {/* Address Section */}
-//         <div className="grid grid-cols-3 gap-4 mb-4">
-//           <div>
-//             <label className="text-sm block">ग्राम</label>
-//             <input type="text" className="border p-1 w-full" />
-//           </div>
-//           <div>
-//             <label className="text-sm block">तहसील</label>
-//             <input type="text" className="border p-1 w-full" />
-//           </div>
-//           <div>
-//             <label className="text-sm block">जिला</label>
-//             <input type="text" className="border p-1 w-full" />
-//           </div>
+//         <div className="row">
+//           <label>Gaadi Khata Vivran:</label>
+//           <label>Khata Dharkh Naam: <input type="text" /></label>
+//           <label>Khata Sankhya: <input type="text" /></label>
+//           <label>Bank and Shakha: <input type="text" /></label>
+//           <label>Bank IFSC Code: <input type="text" /></label>
+//         </div>
+//       </div>
+
+//       <div className="unloading-section">
+//         <h3>Unloading Details</h3>
+//         <div className="row">
+//           <label>Gaadi Booking Transport Company:</label>
+//           <label>Name: <input type="text" /></label>
+//           <label>Mobile No. 1: <input type="text" /></label>
+//           <label>Mobile No. 2: <input type="text" /></label>
+//         </div>
+//       </div>
+
+//       <div className="party-section">
+//         <h3>Party Details</h3>
+//         <div className="row">
+//           <label>Gaadi Malik:</label>
+//           <label>Gaon: <input type="text" /></label>
+//           <label>Tehseel: <input type="text" /></label>
+//           <label>Jeela: <input type="text" /></label>
+//         </div>
+//         <div className="row">
+//           <label>Tay Gaadi Mada (PMT): <input type="text" /></label>
+//           <label>Tay Dala Mukana (PMT): <input type="text" /></label>
+//           <label>Gaadi Any Kharcha: <input type="text" /></label>
 //         </div>
 
-//         {/* Payment Details */}
-//         <div className="grid grid-cols-2 gap-4 mb-4">
-//           <div>
-//             <label className="text-sm block">पार्टी कुल भाड़ा</label>
-//             <input type="number" className="border p-1 w-full" />
-//           </div>
-//           <div>
-//             <label className="text-sm block">बैंक IFSC कोड</label>
-//             <input type="text" className="border p-1 w-full" />
-//           </div>
+//         <div className="row">
+//           <label>Party Kul Mada: <input type="text" /></label>
+//           <label>Party Advance Date: <input type="date" /></label>
+//           <label>Party Poch Date: <input type="date" /></label>
 //         </div>
 
-//         {/* Party Details */}
-//         <div className="mb-4">
-//           <label className="text-sm block font-bold">पार्टी विवरण :-</label>
-//           <div className="grid grid-cols-1 gap-2">
-//             {[1, 2, 3, 4].map((num) => (
-//               <input
-//                 key={num}
-//                 type="text"
-//                 className="border p-1 w-full"
-//                 placeholder={`पार्टी विवरण ${num}`}
-//               />
-//             ))}
-//           </div>
+//         <div className="row">
+//           <label>Maadi Kul Mada: <input type="text" /></label>
+//           <label>Gaadi Advance Date: <input type="date" /></label>
+//           <label>Gaadi Poch Date: <input type="date" /></label>
+//         </div>
+//       </div>
+
+//       <div className="factory-section">
+//         <h3>Factory Details</h3>
+//         <div className="row">
+//           <label>Gaadi Loading Factory Vivran:</label>
+//           <label>Factory Ka Naam: <input type="text" /></label>
+//           <label>Address: <textarea /></label>
+//           <label>Party Ban: <input type="text" /></label>
+//           <label>NCTC Bank: <input type="text" /></label>
 //         </div>
 
-//         {/* Additional Party Details */}
+//         <div className="row">
+//           <label>Gaadi Unloading Factory Vivran:</label>
+//           <label>Factory Ka Naam: <input type="text" /></label>
+//           <label>Address: <textarea /></label>
+//           <label>Broker/Transport Name: <input type="text" /></label>
+//           <label>Mobile No.: <input type="text" /></label>
+//         </div>
+//       </div>
+
+//       <div className="remarks-section">
 //         <div>
-//           <label className="text-sm block font-bold">गाड़ी विवरण :-</label>
-//           <div className="grid grid-cols-1 gap-2">
-//             {[1, 2, 3, 4].map((num) => (
-//               <input
-//                 key={num}
-//                 type="text"
-//                 className="border p-1 w-full"
-//                 placeholder={`गाड़ी विवरण ${num}`}
-//               />
-//             ))}
-//           </div>
+//           <h3>Party Remarks</h3>
+//           <textarea rows="4"></textarea>
 //         </div>
+//         <div>
+//           <h3>Gaadi Remarks</h3>
+//           <textarea rows="4"></textarea>
+//         </div>
+//       </div>
 
-//         {/* Footer */}
-//         <div className="mt-4 text-right">
-//           <label className="text-sm">हस्ताक्षर प्राधिकृत</label>
-//         </div>
-//       </form>
+//       <footer>
+//         <p>Signature Proprietor</p>
+//       </footer>
 //     </div>
 //   );
 // };
 
 // export default TransportForm;
 
-import React from 'react';
+import React from "react";
+import "../styles/TransportForm.css";
 
 const TransportForm = () => {
   return (
-    <div className="p-4 max-w-5xl mx-auto">
-      <form className="bg-white border-2 border-gray-400 p-6 relative">
-        {/* Header with logo placeholders */}
-        <div className="flex justify-between items-start mb-6">
-          <div className="grid grid-cols-1 gap-2">
-            <div className="border-b border-gray-400">
-              <label className="text-sm">चालान नं.</label>
-              <input type="text" className="border-none outline-none p-1 w-32" />
-            </div>
-            <div className="border-b border-gray-400">
-              <label className="text-sm">पेज नं.</label>
-              <input type="text" className="border-none outline-none p-1 w-32" />
-            </div>
-            <div className="border-b border-gray-400">
-              <label className="text-sm">सीरियल नं.</label>
-              <input type="text" className="border-none outline-none p-1 w-32" />
-            </div>
-          </div>
+    <div className="transport-form">
+      <header>
+        <h1>|| श्री गुरु जम्भेश्वराय नमः ||</h1>
+        <h2>न्यू चौधरी ट्रांसपोर्ट कंपनी</h2>
+      </header>
 
-          {/* Center company title with profit/loss indicators */}
-          <div className="flex flex-col items-center">
-            {/* Small image placeholder */}
-            <div className="w-8 h-8 bg-gray-200 mb-1"></div>
-            <div className="flex items-center gap-4 text-sm mb-1">
-              <span>Profit -{'>'}</span>
-              <span className="border-b border-gray-400 w-32"></span>
-              <span>Loss -{'>'}</span>
-            </div>
-            <h1 className="text-xl font-bold text-center">न्यू चौधरी ट्रांसपोर्ट कम्पनी</h1>
-            {/* Small image placeholder */}
-            <div className="w-8 h-8 bg-gray-200 mt-1"></div>
-          </div>
+      <div className="form-section">
+        <div className="row">
+          <label>चालान नंबर: <input type="text" /></label>
+          <label>पेज नंबर: <input type="text" /></label>
+          <label>सीरियल नंबर: <input type="text" /></label>
+        </div>
+        <div className="row">
+          <label>लाभ: <input type="text" /></label>
+          <span>से</span>
+          <label>हानि: <input type="text" /></label>
+          <label>वजन: <input type="text" /></label>
+        </div>
+        <div className="row">
+          <label>क्रमांक नंबर: <input type="text" /></label>
+          <label>गाड़ी नंबर: <input type="text" /></label>
+        </div>
+      </div>
 
-          {/* Right side details */}
-          <div className="grid grid-cols-1 gap-2">
-            <div className="border-b border-gray-400">
-              <label className="text-sm">क्रमांक</label>
-              <input type="text" className="border-none outline-none p-1 w-32 text-red-600" defaultValue="25501" />
-            </div>
-            <div className="border-b border-gray-400">
-              <label className="text-sm">गाड़ी नं.</label>
-              <input type="text" className="border-none outline-none p-1 w-32" />
-            </div>
-            <div className="border-b border-gray-400">
-              <label className="text-sm">वजन</label>
-              <input type="text" className="border-none outline-none p-1 w-32" />
-            </div>
-          </div>
+      <div className="details-section">
+        <div className="row">
+          <label>लोडिंग हेती: <input type="text" /></label>
+          <label>लोडिंग तारीख: <input type="date" /></label>
+          <label>मेल डिलीवरी तय तारीख: <input type="date" /></label>
         </div>
 
-        {/* Loading dates section */}
-        <div className="grid grid-cols-2 gap-4 mb-4">
-          <div className="border border-gray-300 p-2">
-            <label className="text-sm block">लोडिंग हेतु गाड़ी फैक्ट्री पहुंचने की दिनांक</label>
-            <input type="date" className="border-none outline-none p-1 w-full" />
-          </div>
-          <div className="border border-gray-300 p-2">
-            <label className="text-sm block">लोडिंग दिनांक</label>
-            <input type="date" className="border-none outline-none p-1 w-full" />
-          </div>
+        <div className="row">
+          <label>गाड़ी चालक नंबर: <input type="text" /></label>
+          <label>गाड़ी खलासी नंबर: <input type="text" /></label>
+          <label>गाड़ी व्हाट्सएप नंबर: <input type="text" /></label>
+          <label>गाड़ी मालिक नंबर: <input type="text" /></label>
         </div>
 
-        {/* Address Section with borders */}
-        <div className="border border-gray-300 p-2 mb-4">
-          <div className="grid grid-cols-3 gap-4">
-            <div>
-              <label className="text-sm block">ग्राम</label>
-              <input type="text" className="border-b border-gray-400 outline-none p-1 w-full" />
-            </div>
-            <div>
-              <label className="text-sm block">तहसील</label>
-              <input type="text" className="border-b border-gray-400 outline-none p-1 w-full" />
-            </div>
-            <div>
-              <label className="text-sm block">जिला</label>
-              <input type="text" className="border-b border-gray-400 outline-none p-1 w-full" />
-            </div>
-          </div>
+        <div className="row">
+          <label>गाड़ी खाता विवरण:</label>
+          <label>खाता धारक नाम: <input type="text" /></label>
+          <label>खाता संख्या: <input type="text" /></label>
+          <label>बैंक और शाखा: <input type="text" /></label>
+          <label>बैंक IFSC कोड: <input type="text" /></label>
+        </div>
+      </div>
+
+      <div className="unloading-section">
+        <h3>अनलोडिंग विवरण</h3>
+        <div className="row">
+          <label>गाड़ी बुकिंग ट्रांसपोर्ट कंपनी:</label>
+          <label>नाम: <input type="text" /></label>
+          <label>मोबाइल नंबर 1: <input type="text" /></label>
+          <label>मोबाइल नंबर 2: <input type="text" /></label>
+        </div>
+      </div>
+
+      <div className="party-section">
+        <h3>पार्टी विवरण</h3>
+        <div className="row">
+          <label>गाड़ी मालिक:</label>
+          <label>गांव: <input type="text" /></label>
+          <label>तहसील: <input type="text" /></label>
+          <label>जिला: <input type="text" /></label>
+        </div>
+        <div className="row">
+          <label>तय गाड़ी मादा (PMT): <input type="text" /></label>
+          <label>तय डाला मुकाना (PMT): <input type="text" /></label>
+          <label>गाड़ी अन्य खर्चा: <input type="text" /></label>
         </div>
 
-        {/* Payment Details with borders */}
-        <div className="grid grid-cols-2 gap-4 mb-4">
-          <div className="border border-gray-300 p-2">
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="text-sm block">पार्टी कुल भाड़ा</label>
-                <input type="text" className="border-b border-gray-400 outline-none p-1 w-full" />
-              </div>
-              <div>
-                <label className="text-sm block">दिनांक</label>
-                <input type="date" className="border-b border-gray-400 outline-none p-1 w-full" />
-              </div>
-            </div>
-          </div>
-          <div className="border border-gray-300 p-2">
-            <div>
-              <label className="text-sm block">बैंक IFSC कोड</label>
-              <input type="text" className="border-b border-gray-400 outline-none p-1 w-full" />
-            </div>
-          </div>
+        <div className="row">
+          <label>पार्टी कुल मादा: <input type="text" /></label>
+          <label>पार्टी एडवांस तारीख: <input type="date" /></label>
+          <label>पार्टी पहुँच तारीख: <input type="date" /></label>
         </div>
 
-        {/* Party Details Section */}
-        <div className="grid grid-cols-2 gap-4 mb-4">
-          <div className="border border-gray-300 p-2">
-            <label className="text-sm block font-bold mb-2">पार्टी विवरण :-</label>
-            {[1, 2, 3, 4].map((num) => (
-              <div key={num} className="border-b border-gray-400 mb-2">
-                <input type="text" className="outline-none p-1 w-full" />
-              </div>
-            ))}
-          </div>
-          <div className="border border-gray-300 p-2">
-            <label className="text-sm block font-bold mb-2">गाड़ी विवरण :-</label>
-            {[1, 2, 3, 4].map((num) => (
-              <div key={num} className="border-b border-gray-400 mb-2">
-                <input type="text" className="outline-none p-1 w-full" />
-              </div>
-            ))}
-          </div>
+        <div className="row">
+          <label>माड़ी कुल मादा: <input type="text" /></label>
+          <label>गाड़ी एडवांस तारीख: <input type="date" /></label>
+          <label>गाड़ी पहुँच तारीख: <input type="date" /></label>
+        </div>
+      </div>
+
+      <div className="factory-section">
+        <h3>फैक्ट्री विवरण</h3>
+        <div className="row">
+          <label>गाड़ी लोडिंग फैक्ट्री विवरण:</label>
+          <label>फैक्ट्री का नाम: <input type="text" /></label>
+          <label>पता: <textarea /></label>
+          <label>पार्टी बन: <input type="text" /></label>
+          <label>NCTC बैंक: <input type="text" /></label>
         </div>
 
-        {/* Footer */}
-        <div className="text-right mt-6">
-          <span className="text-sm border-t border-gray-400 pt-1">हस्ताक्षर प्राधिकृत</span>
+        <div className="row">
+          <label>गाड़ी अनलोडिंग फैक्ट्री विवरण:</label>
+          <label>फैक्ट्री का नाम: <input type="text" /></label>
+          <label>पता: <textarea /></label>
+          <label>ब्रोकर/ट्रांसपोर्ट का नाम: <input type="text" /></label>
+          <label>मोबाइल नंबर: <input type="text" /></label>
         </div>
-      </form>
+      </div>
+
+      <div className="remarks-section">
+        <div>
+          <h3>पार्टी टिप्पणी</h3>
+          <textarea rows="4"></textarea>
+        </div>
+        <div>
+          <h3>गाड़ी टिप्पणी</h3>
+          <textarea rows="4"></textarea>
+        </div>
+      </div>
+
+      <footer>
+        <p>हस्ताक्षर: मालिक</p>
+      </footer>
     </div>
   );
 };
